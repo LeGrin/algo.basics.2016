@@ -1,0 +1,22 @@
+{
+  "name": "algo.basics",
+  "version": "1.0.0",
+  "description": "pjctr course",
+  "main": "index.js",
+  "dependencies": {
+    "directory-tree": "^1.1.1",
+    "npm": "^3.10.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "algorythms",
+    "js",
+    "html",
+    "hardwork"
+  ],
+  "author": "LeGrin",
+  "license": "ISC"
+}

@@ -1,0 +1,51 @@
+.square-table {
+    width: 20%;
+    padding-bottom: 20%; /* = width for a square aspect ratio */
+}
+
+
+.square {
+    float:left;
+    position: relative;
+    width: 20%;
+    padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    overflow:hidden;
+    border: 2px solid blue;
+    border-radius: 10%;
+}
+
+.content {
+    position:absolute;
+    height:80%; /* = 100% - 2*10% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 10% 5%;
+}
+.table{
+    display:table;
+    height:100%;
+    width:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:top;
+    height:100%;
+    width:100%;
+}
+
+.filled-one-cell{
+	background-color: blue;
+	border: 1px solid black;
+}
+
+.filled-zero-cell{
+	background-color: green;
+	border: 1px solid black;
+}
+
+.green-tree {
+	position:absolute;
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+}
