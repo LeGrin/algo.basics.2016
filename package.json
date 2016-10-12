@@ -7,7 +7,13 @@
     "directory-tree": "^1.1.1",
     "npm": "^3.10.8"
   },
-  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LeGrin/algo.basics.2016.git"
+  },
+  "devDependencies": {
+    "eslint": "^3.6.1"
+  },
   "scripts": {
     "test": "test"
   },

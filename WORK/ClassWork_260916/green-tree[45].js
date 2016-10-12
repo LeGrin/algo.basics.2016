@@ -5,7 +5,7 @@ function generate_green_tree(number){
 
 
 	stop = 0;
-	for (var i=number;i>=0;i--){
+	for (var i=number-1;i>=0;i--){
 		matrix[i] = [];
 		for (var j = 0; j < number; j++){
 			if (j >= stop && j < number - stop){
@@ -25,9 +25,11 @@ function generate_green_tree(number){
 
 function generate_html_table(inputarray){
 	output = "<table class='green-tree square-table'>\n";
-	for (var j = 0; j < number; j ++){
+	for (var j = 0; j < number; j++){
+		console.log(inputarray[4]);
 		output += "\t<tr>\n";
 		for (var i = 0; i < number; i++){
+			console.log(inputarray[j][i]);
 			output += generate_cell(inputarray[j][i]);
 		}
 
@@ -40,7 +42,7 @@ function generate_html_table(inputarray){
 
 function generate_cell(isFilled){
 	output = "\t\t<td class='";
-	if (isFilled){
+	if (!isFilled){
 		output += "filled-zero-cell";
 	}
 	else{
@@ -58,3 +60,4 @@ function generate_cell(isFilled){
 generate_green_tree(number)
 console.log(matrix)
 console.log(generate_html_table(matrix))
+console.log(matrix)
