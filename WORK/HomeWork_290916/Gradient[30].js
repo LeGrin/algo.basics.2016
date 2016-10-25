@@ -14,7 +14,7 @@ function generate_gradient(number){
 
 
 function generate_html_table(inputarray){
-	output = "<table style='height:200px;width:200px;' >\n";
+	output = "<table style='height:200px;width:200px;' cellspacing='0' cellpadding='0' >\n";
 	for (var j = number-1; j >= 0; j--){
 		output += "\t<tr>\n";
 		for (var i = 0; i < number; i++){
@@ -30,7 +30,7 @@ function generate_html_table(inputarray){
 
 function generate_cell(isFilled){
 	output = "\t\t<td style='";
-	color =256-isFilled%256;
+	color =256-Math.round((isFilled/(number+number))*256);
 	output += "background-color:rgb(" + color + ',' + color + ',' + color + ');';
 	output +=  "width:";
 	output += Math.round(200/number,0);

@@ -20,6 +20,11 @@
     width: 100%;
 }
 
+.image-preview{
+    height:360px;
+    width: 360px;
+}
+
 .square {
     float:left;
     position: relative;

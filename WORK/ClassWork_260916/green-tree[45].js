@@ -24,12 +24,12 @@ function generate_green_tree(number){
 
 
 function generate_html_table(inputarray){
-	output = "<table class='green-tree square-table'>\n";
+	output = "<table style='position:absolute;border: 1px solid black;width: 200px;height: 200px;'>\n";
 	for (var j = 0; j < number; j++){
-		console.log(inputarray[4]);
+		//console.log(inputarray[4]);
 		output += "\t<tr>\n";
 		for (var i = 0; i < number; i++){
-			console.log(inputarray[j][i]);
+			//console.log(inputarray[j][i]);
 			output += generate_cell(inputarray[j][i]);
 		}
 
@@ -41,12 +41,12 @@ function generate_html_table(inputarray){
 
 
 function generate_cell(isFilled){
-	output = "\t\t<td class='";
+	output = "\t\t<td style='background:";
 	if (!isFilled){
-		output += "filled-zero-cell";
+		output += "blue";
 	}
 	else{
-		output += "filled-one-cell";
+		output += "green";
 	}
 	output +=  "' width='";
 	output += Math.round(200/number,0);
@@ -58,6 +58,6 @@ function generate_cell(isFilled){
 
 
 generate_green_tree(number)
-console.log(matrix)
+//console.log(matrix)
 console.log(generate_html_table(matrix))
-console.log(matrix)
+//console.log(matrix)
